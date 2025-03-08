@@ -295,7 +295,7 @@ const Players: NextPageWithLayout = () => {
               />
               <CustomInput
                 label="Player's First Name"
-                placeholder="firstName"
+                _placeholder="firstName"
                 id="firstName"
                 inputProps={{
                   onChange: handleChange,
@@ -310,7 +310,7 @@ const Players: NextPageWithLayout = () => {
               />
               <CustomInput
                 label="Player's Last Name"
-                placeholder="lastName"
+                _placeholder="lastName"
                 id="lastName"
                 inputProps={{
                   onChange: handleChange,
@@ -324,7 +324,7 @@ const Players: NextPageWithLayout = () => {
 
               <Select
                 mt="20px"
-                placeholder="Select Team"
+                _placeholder="Select Team"
                 id="teamId"
                 onChange={handleChange}
               >
@@ -343,7 +343,7 @@ const Players: NextPageWithLayout = () => {
               <CustomSelect
                 mt="20px"
                 label="Select Position"
-                placeholder="position"
+                _placeholder="position"
                 selectOptions={positionList.map((i) => ({
                   label: i.label,
                   value: i.value,
@@ -355,7 +355,7 @@ const Players: NextPageWithLayout = () => {
 
               <CustomInput
                 label="Player's Number"
-                placeholder="player number"
+                _placeholder="player number"
                 id="playerNumber"
                 inputProps={{
                   onChange: handleChange,
@@ -372,7 +372,7 @@ const Players: NextPageWithLayout = () => {
 
               <CustomInput
                 label="Date of Birth"
-                placeholder="date of birth"
+                _placeholder="date of birth"
                 id="dob"
                 inputProps={{
                   onChange: handleChange,
@@ -386,7 +386,7 @@ const Players: NextPageWithLayout = () => {
               <CustomSelect
                 mt="20px"
                 label="Dominant Foot"
-                placeholder="Dominant Foot"
+                _placeholder="Dominant Foot"
                 selectOptions={dominantFootlist.map((foot) => ({
                   label: foot.label,
                   value: foot.value,
@@ -398,7 +398,7 @@ const Players: NextPageWithLayout = () => {
 
               <CustomInput
                 label="Player's Height"
-                placeholder="Player's Height"
+                _placeholder="Player's Height"
                 id="height"
                 inputProps={{
                   onChange: handleChange,
@@ -412,7 +412,7 @@ const Players: NextPageWithLayout = () => {
 
               <CustomInput
                 label="Player's Weight"
-                placeholder="Player's Weight"
+                _placeholder="Player's Weight"
                 id="weight"
                 inputProps={{
                   onChange: handleChange,

@@ -17,21 +17,20 @@
   background: #e0e0e0;
 }
 
-.teamHead{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-       width: 100%;
-    height: 75vh;
-    border-radius: 20px;
-    padding-bottom: 10%;
-        /* position: absolute; */
+.teamHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  border-radius: 20px;
+  padding-bottom: 10%;
+  /* position: absolute; */
 }
-.teamHead h1{
-
+.teamHead h1 {
   font-size: 6rem;
-  font-family: 'formula_condensedbold', roboto;
+  font-family: "formula_condensedbold", roboto;
   letter-spacing: 2px;
   width: 70%;
   margin: 0 auto;
@@ -39,35 +38,46 @@
   padding: 1% 2%;
 }
 
-.teamInfo{
-    padding: 20px;
-    width: 100%;
+.teamInfo {
+  padding: 20px;
+  width: 100%;
 }
-.teamPosition{
-    padding-bottom: 20px;
+.teamPosition {
+  padding-bottom: 20px;
 }
-.teamPosition h2{
-    padding: 1rem 0;
-    font-size: 20px;
-    text-transform: uppercase;
+.teamPosition h2 {
+  padding: 1rem 0;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .teamPosition ul {
-   display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 
-.teamPosition ul li{
-    min-height: 18rem;
-    height: 28rem;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    border-radius: 20px;
+.teamPosition ul li {
+  min-height: 18rem;
+  height: 28rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
 }
 
+.playerCard {
+  position: relative;
+  display: flex;
+  align-items: end;
+  overflow: hidden;
+}
+.playerImage {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
 
 .playerDetails {
   background-color: #005bb5; /* Adjust the background color */
@@ -82,29 +92,27 @@
 }
 
 .playerFirstName {
-    font-family: 'formula_condensedlight', roboto;
+  font-family: "formula_condensedlight", roboto;
   font-size: 18px;
 }
 
 .playerLastName {
-    font-family: 'formula_condensedregular', roboto;
-    font-size: 24px;
+  font-family: "formula_condensedregular", roboto;
+  font-size: 24px;
 }
 
-
-.ProfileLink{
-    text-align: right;
-    
+.ProfileLink {
+  text-align: right;
 }
 
 .playerProfileLink {
   color: white;
   text-decoration: none;
-    font-family: 'formula_condensedlight', roboto;
-    font-size: 16px;
-    background: none;
-    border: none;
-    padding: 0px;
+  font-family: "formula_condensedlight", roboto;
+  font-size: 16px;
+  background: none;
+  border: none;
+  padding: 0px;
 }
 
 .playerProfileLink:hover {
@@ -112,70 +120,65 @@
   cursor: pointer;
 }
 
-
-
-.playerName{
-    text-align: left;
+.playerName {
+  text-align: left;
 }
 
 @media (max-width: 768px) {
-    .teamPosition ul {
-   display: grid;
+  .teamPosition ul {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 20px;
-}
-.teamPosition ul li{
+  }
+  .teamPosition ul li {
     min-height: 18rem;
     height: 20rem;
-}
+  }
 }
 @media (max-width: 600px) {
-    .teamPosition ul {
-   display: grid;
+  .teamPosition ul {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 20px;
-}
-.teamPosition ul li{
+  }
+  .teamPosition ul li {
     min-height: 18rem;
     height: 20rem;
     padding: 5px;
-}
-.teamHead h1{
-  font-size: 4rem;
-}
-
+  }
+  .teamHead h1 {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 400px) {
-    .playerDetails {
+  .playerDetails {
     display: block;
-}
-.ProfileLink{
+  }
+  .ProfileLink {
     text-align: left;
-    
-}
-.teamPosition ul li{
+  }
+  .teamPosition ul li {
     min-height: 17rem;
     height: 17rem;
     border-radius: 10px;
-}
-.teamInfo{
+  }
+  .teamInfo {
     padding: 10px;
-}
-.playerFirstName {
-     font-size: 16px;
-}
-
-.playerLastName {
-    font-size: 18px;
-}
-.playerProfileLink {
+  }
+  .playerFirstName {
     font-size: 16px;
-}
-.teamHead h1{
+  }
 
-  font-size: 3rem;
-}
+  .playerLastName {
+    font-size: 18px;
+  }
+  .playerProfileLink {
+    font-size: 16px;
+  }
+  .teamHead h1 {
+    font-size: 3rem;
+  }
 }
